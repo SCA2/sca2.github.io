@@ -1,0 +1,307 @@
+%div#buffer.anchor(name="about")
+
+%div#main.container-fluid
+  / Fixed navbar
+  %nav.navbar.navbar-default.navbar-fixed-top
+    %div.container
+      %div.navbar-header
+        %a.navbar-brand(href="#about") Tim Ryan
+      %div#navbar.navbar-collapse.collapse
+        %ul.nav.navbar-nav
+          %li
+            =link_to 'About', '#about'
+          %li
+            =link_to 'Project', '#projects'
+          %li
+            =link_to 'Contact', '#contact'
+
+  %section#about.center-block.hero
+    %div.container.row
+      %div.col-xs-4#sliders
+        %p#slide-1 Products: designed
+        %p#slide-2 Circuits: developed
+        %p#slide-3 Computers: programmed    
+        %p#slide-4 Problems: solved
+      %div.col-xs-8
+        %p#bio
+          I'm an experienced engineer and developer based in Oakland, California.  I've worked with many technologies and can bring a comprehensive set of skills to your next project.
+        / Skills
+        %ul.list-inline
+          %li.skills Ruby / Rails
+          %li.skills JavaScript
+          %li.skills C / C++
+          %li.skills Agile
+          %li.skills TDD
+          %li.skills Circuit Design
+          %li.skills PCB Layout
+          %li.skills Embedded Systems
+          %li.skills Linux
+          %li.skills Windows
+
+  %section#projects.center-block.anchor(name="projects")
+    %div.container.row.project
+      %div.col-xs-7
+        %div.class.thumbnail
+          = link_to 'https://seventhcircleaudio.com' do
+            =image_tag 'sca_thumb.png'
+      %div.col-xs-5
+        %div.caption
+          %h3 Seventh Circle Audio
+          %p My e-commerce site. In addition to the site itself, I designed all the products for sale on it.
+        %ul.list-inline
+          %li.skills Ruby / Rails
+          %li.skills Postgresql
+          %li.skills HTML
+          %li.skills CSS
+          %li.skills JavaScript
+          %li.skills jQuery
+          %li.skills PayPal
+          %li.skills RSpec
+          %li.skills Git
+          %li.skills Linux
+          %li.skills NGINX
+          %li.skills Puma
+          %li.skills Capistrano
+          %li.skills Pivotal
+    %hr
+    %div.container.row.project
+      %div.col-xs-5
+        %div.caption
+          %h3 MyFlix
+          %p Tealeaf Academy Project
+        %ul.list-inline
+          %li.skills Ruby / Rails
+          %li.skills Postgresql
+          %li.skills HAML
+          %li.skills CSS
+          %li.skills JavaScript
+          %li.skills jQuery
+          %li.skills Stripe
+          %li.skills RSpec
+          %li.skills Git
+          %li.skills Linux
+          %li.skills Heroku
+          %li.skills Circle CI
+          %li.skills AWS
+          %li.skills Elasticsearch
+          %li.skills Pivotal
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://stormy-brook-2436.herokuapp.com/' do
+            =image_tag 'myflix_thumb.png', alt: 'MyFlix'
+    %hr
+    %div.container.row.project
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://bomanager.herokuapp.com/' do
+            =image_tag 'bomanager_thumb.png', alt: 'BOM Manager'
+      %div.col-xs-5
+        %div.caption
+          %h3 BOManager
+          %p Octopart API Test App
+        %ul.list-inline
+          %li.skills Ruby / Rails
+          %li.skills Postgresql
+          %li.skills HAML
+          %li.skills CSS
+          %li.skills JavaScript
+          %li.skills jQuery
+          %li.skills RSpec
+          %li.skills Git
+          %li.skills Linux
+          %li.skills Heroku
+          %li.skills Pivotal
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-5
+        %div.caption
+          %h3 Rotten Potatoes!
+          %p CS169 Rails Project
+        %ul.list-inline
+          %li.skills Ruby / Rails
+          %li.skills Postgresql
+          %li.skills HTML
+          %li.skills CSS
+          %li.skills RSpec
+          %li.skills Cucumber
+          %li.skills Git
+          %li.skills Linux
+          %li.skills Heroku
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://bit.ly/2evCBHm' do
+            =image_tag 'rotten_potatoes_thumb.png', alt: 'Rotten Potatoes!'
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-7
+        %div.class.thumbnail
+          %img(src="https://seventhcircleaudio.com/assets/CH02-1-e8f98c15cbbaad2a4e03dfc4f7f1cf10.jpg" alt="Seventh Circle Audio")
+      %div.col-xs-5
+        %div.caption
+          %h3 VU Meter
+          %p Software-Configurable VU Meter Prototype
+        %ul.list-inline
+          %li.skills Embedded C
+          %li.skills Analog Circuit Design
+          %li.skills PCB Layout
+          %li.skills Microchip dsPIC
+          %li.skills DMA
+          %li.skills ADC
+          %li.skills SPI
+          %li.skills USB
+          %li.skills Unity
+          %li.skills TDD
+          %li.skills Git
+          %li.skills Linux
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-5
+        %div.caption
+          %h3 Roguelike
+          %p Rogue-like RPG in JavaScript and React. Rooms are generated by randomly seeding a BFS and connected with a version of A* search.
+        %ul.list-inline
+          %li.skills JavaScript
+          %li.skills React
+          %li.skills HAML
+          %li.skills SASS
+          %li.skills Babel
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://codepen.io/tprsca/full/JXZjYp/' do
+            =image_tag 'roguelike_thumb.png'
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://codepen.io/tprsca/full/LGqLaM/' do
+            =image_tag 'tic_tac_toe_thumb.png'
+      %div.col-xs-5
+        %div.caption
+          %h3 Tic-Tac-Toe
+          %p Unbeatable tic-tac-toe implemented with JavaScript, jQuery, and LESS
+        %ul.list-inline
+          %li.skills JavaScript
+          %li.skills HAML
+          %li.skills LESS
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-5
+        %div.caption
+          %h3 Game of Life
+          %p John Conway's Game of Life implemented with JavaScript, React, and SASS
+        %ul.list-inline
+          %li.skills JavaScript
+          %li.skills React
+          %li.skills HAML
+          %li.skills SASS
+          %li.skills Babel
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://codepen.io/tprsca/full/LNWWMZ/' do
+            =image_tag 'game_of_life_thumb.png'
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://codepen.io/tprsca/full/xVpGQM/' do
+            =image_tag 'camper_leaderboard_thumb.png'
+      %div.col-xs-5
+        %div.caption
+          %h3 Free Code Camp Leaderboard.
+          %p Example project using JavaScript, React-Bootstrap, Babel, and SASS
+        %ul.list-inline
+          %li.skills JavaScript
+          %li.skills React-Bootstrap
+          %li.skills HAML
+          %li.skills SASS
+          %li.skills Babel
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-5
+        %div.caption
+          %h3 Simon
+          %p Simon memory game implemented in JavaScript
+        %ul.list-inline
+          %li.skills JavaScript
+          %li.skills HAML
+          %li.skills LESS
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://codepen.io/tprsca/full/NxVVPR/' do
+            =image_tag 'simon_thumb.png'
+
+    %hr
+    %div.container.row.project
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'http://codepen.io/tprsca/full/jqbbbN/' do
+            =image_tag 'markdown_previewer_thumb.png'
+      %div.col-xs-5
+        %div.caption
+          %h3 Markdown Previewer
+          %p Example project using JavaScript, React, Babel, and SASS
+        %ul.list-inline
+          %li.skills JavaScript
+          %li.skills React
+          %li.skills HAML
+          %li.skills SASS
+          %li.skills Babel
+
+  / Map
+  %section.row
+    %div.col-xs-12#contact_map
+
+  / Contact
+  %section.row.anchor(name="contact")
+    %div.row
+      %div.container
+        / Contact details
+        %div.col-xs-4.center-block
+          %img.avatar(src="http://sca2.github.io/img/avatar.jpg" alt="profile")
+          %div#social
+            %ul.list-inline
+              %li
+                %a(href="http://github.com/sca2" target="_blank")
+                  %i.fa.fa-github-square
+              %li
+                %a(href="https://www.linkedin.com/in/tprsca" target="_blank")
+                  %i.fa.fa-linkedin-square
+              %li
+                %a(href="https://twitter.com/seventhcircle" target="_blank")
+                  %i.fa.fa-twitter-square
+          %div.details
+            %a.details-small(href="tel:5109728346") 1.510.972.8346
+        / Contact Form
+        %div.col-xs-8#contact
+          %form(action="http://formspree.io/tpryan_1965@yahoo.com" id="contact-form" method="post" name="contact-form")
+            / Input fields
+            %div.row.form-group
+              %div.col-xs-4
+                %input.form-control(id="field1" name="name" placeholder="Name" required="" type="text")
+              %div.col-xs-4
+                %input.col-xs-4.form-control(type="email" name="_replyto" placeholder="Email" required="" type="email")
+              %div.col-xs-4
+                %input.col-xs-4.form-control(name="phone" placeholder="Phone" required="" type="text")
+                %input(type="hidden" name="_next" value="#")
+            / Message 
+            %div.form-group
+              %textarea.form-control(name="body" placeholder="Message" required="" rows="6")
+            / Submit
+            %div.pull-right
+              %input.btn.btn-primary(type="submit" value="send")
+  / Links
+  %div.row
+    %div.container.center-block
+      %ul.list-inline
+        %li
+          =link_to 'resume', 'images/resume.pdf', target: '_blank'
+        %li.divider-vertical
+        %li
+          %a(href="http://github.com/sca2" target="_blank") github
