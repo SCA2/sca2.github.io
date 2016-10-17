@@ -263,23 +263,24 @@
     %div.row
       %div.container
         / Contact details
-        %div.col-xs-4.center-block
-          %img.avatar(src="http://sca2.github.io/img/avatar.jpg" alt="profile")
+        %div.col-xs-3.center-block
+          %div.class.thumbnail
+            =image_tag 'avatar.jpg', alt: 'profile photo'
           %div#social
             %ul.list-inline
               %li
-                %a(href="http://github.com/sca2" target="_blank")
+                =link_to "http://github.com/sca2", target: "_blank" do
                   %i.fa.fa-github-square
               %li
-                %a(href="https://www.linkedin.com/in/tprsca" target="_blank")
+                =link_to "https://www.linkedin.com/in/tprsca", target: "_blank" do
                   %i.fa.fa-linkedin-square
               %li
-                %a(href="https://twitter.com/seventhcircle" target="_blank")
+                =link_to "https://twitter.com/seventhcircle", target: "_blank" do
                   %i.fa.fa-twitter-square
           %div.details
             %a.details-small(href="tel:5109728346") 1.510.972.8346
         / Contact Form
-        %div.col-xs-8#contact
+        %div.col-xs-9#contact
           %form(action="http://formspree.io/tpryan_1965@yahoo.com" id="contact-form" method="post" name="contact-form")
             / Input fields
             %div.row.form-group
@@ -304,4 +305,4 @@
           =link_to 'resume', 'images/resume.pdf', target: '_blank'
         %li.divider-vertical
         %li
-          %a(href="http://github.com/sca2" target="_blank") github
+          =link_to 'github', 'http://github.com/sca2', target: '_blank'
