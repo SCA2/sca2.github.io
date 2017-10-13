@@ -3,15 +3,11 @@
 //= require jquery
 //= require bootstrap
 
-function slideRight(element, delay) {
-  $(element).delay(delay).effect("slide", "easeInCubic", 1000);
-}
-
 $(document).ready(function() {
-  slideRight("#slide-1", 0);
-  slideRight("#slide-2", 500);
-  slideRight("#slide-3", 1000);
-  slideRight("#slide-4", 1500);
+  $("#fade-1").fadeIn(1000);
+  $("#fade-2").fadeIn(1500);
+  $("#fade-3").fadeIn(2000);
+  $("#fade-4").fadeIn(2500);
 });
 
 $(document).ready(function initMap() {
@@ -91,19 +87,3 @@ $(document).ready(function initMap() {
     }]
   }])
 });
-
-// $.ajax({
-//   url: "http://formspree.io/tpryan_1965@yahoo.com",
-//   method: 'POST',
-//   data: $('#contact_form').serialize(),
-//   dataType: "json",
-//   beforeSend: function() {
-//     //sending message
-//   },
-//   success: function(data) {
-//     //success message
-//   },
-//   error: function(err) {
-//     //error message
-//   }
-// });

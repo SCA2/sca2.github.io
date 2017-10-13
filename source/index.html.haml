@@ -18,17 +18,20 @@
   %section#about.center-block.hero
     %div.container.row
       %div.col-xs-4#sliders
-        %p#slide-1 Products: designed
-        %p#slide-2 Circuits: developed
-        %p#slide-3 Computers: programmed    
-        %p#slide-4 Problems: solved
+        %p#fade-1 Products: designed
+        %p#fade-2 Circuits: developed
+        %p#fade-3 Computers: programmed    
+        %p#fade-4 Problems: solved
       %div.col-xs-8
         %p#bio
-          I'm an experienced engineer and developer based in Oakland, California.  I've worked with many technologies and can bring a comprehensive set of skills to your next project.
+          I'm an enthusiastic engineer and developer based in Oakland, California.  I've worked with many technologies and can bring a comprehensive set of skills to your next project.
         / Skills
         %ul.list-inline
-          %li.skills Ruby / Rails
+          %li.skills Ruby
+          %li.skills Rails
           %li.skills JavaScript
+          %li.skills React
+          %li.skills Express
           %li.skills C / C++
           %li.skills Agile
           %li.skills TDD
@@ -56,7 +59,7 @@
           %li.skills CSS
           %li.skills JavaScript
           %li.skills jQuery
-          %li.skills PayPal
+          %li.skills Stripe
           %li.skills RSpec
           %li.skills Git
           %li.skills Linux
@@ -250,20 +253,34 @@
     %div.container.row.project
       %div.col-xs-7
         %div.class.thumbnail
-          =link_to 'http://codepen.io/tprsca/full/jqbbbN/' do
-            =image_tag 'markdown_previewer_thumb.png'
+          =link_to 'https://fcc-pinterest-clone-app.herokuapp.com/favorites' do
+            =image_tag 'pinterest_clone_thumb.png'
       %div.col-xs-5
         %div.caption
           %h3
-            =link_to 'Markdown Previewer', 'http://codepen.io/tprsca/full/jqbbbN/'
-          %p Example project using JavaScript, React, Babel, and SASS
+            =link_to 'Pinterest Clone', 'https://fcc-pinterest-clone-app.herokuapp.com/favorites'
+          %p Example project using JavaScript, Express, and Bootstrap
         %ul.list-inline
           %li.skills JavaScript
-          %li.skills React
-          %li.skills HAML
-          %li.skills SASS
-          %li.skills Babel
+          %li.skills Express
+          %li.skills Bootstrap
 
+    %hr
+    %div.container.row.project
+      %div.col-xs-5
+        %div.caption
+          %h3
+            =link_to 'Meteorite Map', 'https://codepen.io/tprsca/full/YxMPap/'
+          %p Meteorite strikes across the world with D3
+        %ul.list-inline
+          %li.skills JavaScript
+          %li.skills HTML
+          %li.skills CSS
+          %li.skills D3
+      %div.col-xs-7
+        %div.class.thumbnail
+          =link_to 'https://codepen.io/tprsca/full/YxMPap/' do
+            =image_tag 'meteorite_map.png'
   / Map
   %section.row
     %div.col-xs-12#contact_map
