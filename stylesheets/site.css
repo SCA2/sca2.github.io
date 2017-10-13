@@ -53,16 +53,16 @@ p#bio {
   color: #245682;
   font-size: 21px; }
 
-#slide-1 {
+#fade-1 {
   display: none; }
 
-#slide-2 {
+#fade-2 {
   display: none; }
 
-#slide-3 {
+#fade-3 {
   display: none; }
 
-#slide-4 {
+#fade-4 {
   display: none; }
 
 .list-inline {
